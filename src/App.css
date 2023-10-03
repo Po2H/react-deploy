@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@100;600&display=swap');
+body, h1, h2, h3, p, form {
+    margin: 0;
+    padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.modal {
+    display: none; /* Initially, modal is hidden */
   }
+  
+* {
+    font-family: 'Poppins';
+    font-weight: 600;
+    }
+/* Set body background to a travel-related image and add some fallback colors */
+header {
+    font-size: 2.5rem;
+    margin-top: 10%;
+}
+body {
+    background-color: whitesmoke; /* Fallback color */
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Container to center the form */
+.container {
+    width: 50%;
+    margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+/* Style the form */
+form {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slight shadow */
+    margin-top: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style the labels, inputs, and button */
+label, input, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: -306.500px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1px 2px;
+}
+
+
+input {
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+button {
+    height: 42px;
+    background-color: #523C6E; /* purple */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #523C6E; /* Darker purple */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+.modal-dialog {
+    margin: 15% auto;
+    width: 50%;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    padding: 60px;
+    border: 1px solid #523C6E;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px black;
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 2px;
+    color: black;
+}
+
+.modal-body {
+    padding: 16px;
+}
+
+.modal-title {
+    font-size: 2rem;
+}
+
+#exampleLink {
+    color: #523C6E;
+    text-decoration: none;
+}
+
+#exampleLink:hover {
+    text-decoration: underline;
+    color: #312450; /* A darker shade of purple for hover effect */
 }
