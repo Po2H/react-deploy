@@ -25,7 +25,7 @@ function App() {
 
     const makePrediction = async () => {
         try {
-            const response = await fetch('https://wela-hnplpcqy3-jow12560.vercel.app/', {
+            const response = await fetch('https://wela-jow12560.vercel.app/', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json', },
                 body: JSON.stringify({ categoricalData, numericalData }),
