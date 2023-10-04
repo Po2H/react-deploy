@@ -1,73 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@100;600&display=swap');
-body, h1, h2, h3, p, form {
+
+body, h1, h2, h3, p, form, label, input, select, button {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
+
 .modal {
     display: none; /* Initially, modal is hidden */
-  }
+}
 
-* {
-    font-family: 'Poppins';
-    font-weight: 600;
-    }
-/* Set body background to a travel-related image and add some fallback colors */
 header {
     font-size: 2.5rem;
     margin-top: 10%;
 }
+
 body {
-    background-color: whitesmoke; /* Fallback color */
+    background-color: whitesmoke; 
     background-size: cover;
-    font-family: 'Arial', sans-serif;
     color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100vh;  /* ensure full viewport height */
 }
 
-/* Container to center the form */
 .container {
     width: 50%;
     margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slight shadow */
 }
 
-/* Style the form */
 form {
-    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slight shadow */
-    margin-top: 100px;
 }
 
-/* Style the labels, inputs, and button */
-label, input, button {
+label, input, select, button {
     display: block;
     width: 100%;
     margin-bottom: 20px;
 }
 
-.input-field {
-    width: 40px;
+.input-field, input, select {
     height: 40px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    padding: 1px 2px;
+    padding: 10px;  /* Adjusted padding for inputs and select fields */
 }
-
-
-input {
-    height: 40px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
 
 button {
     height: 42px;
-    background-color: #523C6E; /* purple */
+    background-color: #523C6E;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -76,7 +63,7 @@ button {
 }
 
 button:hover {
-    background-color: #523C6E; /* Darker purple */
+    background-color: #312450; /* Using the color you specified for the hover effect */
 }
 
 .modal {
@@ -91,7 +78,6 @@ button:hover {
     background-color: rgba(0,0,0,0.4);
 }
 
-
 .modal-dialog {
     margin: 15% auto;
     width: 50%;
@@ -102,7 +88,7 @@ button:hover {
     padding: 60px;
     border: 1px solid #523C6E;
     border-radius: 10px;
-    box-shadow: 0 0 10px 2px black;
+    box-shadow: 0px 0px 10px 2px black;
 }
 
 .close {
@@ -138,42 +124,4 @@ button:hover {
 #exampleLink:hover {
     text-decoration: underline;
     color: #312450; /* A darker shade of purple for hover effect */
-}
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
