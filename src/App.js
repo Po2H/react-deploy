@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from 'react';
 import './App.css'; // Assuming you will store your CSS in App.css
 
@@ -81,6 +82,30 @@ function App() {
             {/* Modal Component can go here, or you can create a separate component file for it */}
         </div>
     );
+=======
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+>>>>>>> 94c077d (Initialize project using Create React App)
 }
 
 export default App;
